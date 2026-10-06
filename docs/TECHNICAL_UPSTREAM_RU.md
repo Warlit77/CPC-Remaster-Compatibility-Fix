@@ -507,22 +507,5 @@ Outfits / dresses **35–40** могут по-прежнему не отобра
 
 Такое поведение существовало ещё в pre-port Next-Gen baseline, поэтому это отдельная upstream/content-проблема, а не новая Remaster regression.
 
----
-
-## 16. Основной инженерный вывод
-
-Безопасный порт — это не «сконвертировать всё» и не «resave всё через REDkit».
-
-Рабочая стратегия:
-
-```text
-сохранить оригинальные CPC semantics/assets
-+
-модернизировать только engine-facing serialization, registration и API deltas
-+
-изолировать Remaster compatibility delta
-+
-валидировать относительно независимо сохранённого original baseline
-```
 
 Это даёт upstream чистый путь: либо использовать patch как отдельный слой, либо интегрировать те же изменения в будущий native CPC release.
