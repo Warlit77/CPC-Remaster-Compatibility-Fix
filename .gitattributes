@@ -1,0 +1,6 @@
+*.bundle binary
+*.cache binary
+*.store binary
+*.w3strings binary
+*.pdf binary
+*.zip binary
