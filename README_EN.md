@@ -7,6 +7,14 @@
 > **IMPORTANT: disable/remove `modSharedImports` (Community Patch - Shared Imports) before using this patch.**  
 > The original CPC page lists Shared Imports as a legacy requirement, but this Remaster compatibility release was built and tested with `modSharedImports` absent. Running both is unsupported.
 
+## Current release: v1.0.1 (The Witcher 3 patch 5.01)
+
+Tested on **The Witcher 3 5.01** with **CPC 3.1.2**. This release fixes the new `insideBounds` parameter in `mapMenu.ws`, forwards the 5.01 reward-chest changes, and restores a missing Chameleon Potion silently. All other gameplay resources and cloth data from v1.0.0 are unchanged.
+
+**Sorceress teleport outside combat:** copy the original CPC `NRDodge` binding to `Documents\The Witcher 3\input.settings` inside `[Exploration]`, e.g. `IK_Alt=(Action=NRDodge)` if missing. Back up the settings file and do not add duplicate entries. The compatibility patch deliberately does not modify user controls.
+
+**Ciri:** vanilla/original CPC restricted-menu behavior is unchanged.
+
 ## About
 
 This is a standalone compatibility layer for **Custom Player Characters (CPC) 3.1.2** on the current **The Witcher 3 Next-Gen / Remaster environment**.
@@ -126,4 +134,4 @@ All original CPC assets remain credited to their original author(s).
 
 ## Version
 
-**1.0.0 — first public Remaster compatibility release**
+**1.0.1 — game patch 5.01 compatibility update**
